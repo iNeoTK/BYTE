@@ -1,0 +1,145 @@
+:root {
+    --color-negro: #1a1a1a;
+    --color-naranja: #e0782f;
+    --color-rojo: #d0302a;
+    --color-white: #ffffff;
+    --color-marron: #875639;
+    --color-amarillo: #eccb6c;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/fondohm.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--color-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: var(--color-naranja);
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-white);
+  }
+  
+  .logo-link:hover {
+    opacity: 0.8;
+    color: var(--color-marron);
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    align-items: center;
+  }
+  
+  nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--color-marron);
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
+  .ubicacion-container {
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--color-amarillo);
+    margin-bottom: 2rem;
+  }
+  
+  .mapa-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  #mapa {
+    flex: 1;
+    min-width: 300px;
+    border: 3px solid var(--color-naranja);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .info-container {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(224, 120, 47, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    color: var(--color-naranja);
+    margin-top: 0;
+  }
+  
+  .info-container p {
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: var(--color-negro);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .mapa-info-container {
+      flex-direction: column;
+    }
+  }
+  
+  

@@ -1,0 +1,125 @@
+:root {
+    --color-negro: #1a1a1a;
+    --color-naranja: #e0782f;
+    --color-rojo: #d0302a;
+    --color-white: #ffffff;
+    --color-marron: #875639;
+    --color-amarillo: #eccb6c;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/fondohm.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: var(--color-naranja);
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+    color: var(--color-marron);
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+.logo-img:hover {
+    color: var(--color-marron);
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-marron);
+}
+
+#Texto{
+    text-align: center;
+    padding: 4rem 2rem;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-naranja);
+}
+
+#Texto p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#ordenar-btn {
+    background-color: var(--color-rojo);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+#ordenar-btn:hover {
+    background-color: var(--color-naranja);
+    color: var(--color-negro);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+

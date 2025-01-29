@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYTE - Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="img/BYTE LOGO NORMAL.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo-link" aria-label="Inicio">
+                    <img src="img/BYTE LOGO NORMAL.png" alt="Logo de BYTE" class="logo-img">
+                    <span class="logo-text">BYTE</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <a href="login.html" class="logo-link" aria-label="Login">
+                    <img src="img/logo login.png" alt="Logo de login" class="logo-img">
+                    <span class="logo-link"></span>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h1>Iniciar Sesión</h1>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit" id="login-btn">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="#" id="show-register">Regístrate</a></p>
+        </section>
+
+        <section id="register-section" style="display: none;">
+            <h1>Registro</h1>
+            <form id="register-form">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="email" id="register-email" placeholder="Correo Electrónico" required>
+                <input type="password" id="register-password" placeholder="Contraseña" required>
+                <button type="submit" id="register-btn">Registrarse</button>
+            </form>
+            <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia Sesión</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BYTE Hamburguesas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
+
+
+
+
